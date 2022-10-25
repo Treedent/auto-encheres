@@ -12,6 +12,6 @@ $conf = [
         'host'      => 'localhost',
         'database'  => 'auto-encheres',
         'user'      => 'root',
-        'password' => 'your_password'
+        'password' => 'PhpRoot@2022'
     ]
 ];

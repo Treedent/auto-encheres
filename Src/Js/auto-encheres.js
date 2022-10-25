@@ -46,8 +46,4 @@ window.onload = () => {
     d.querySelector('#to-top').addEventListener('click', () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
-
-    d.querySelector('#search-btn').addEventListener('click', () => {
-       alert('Cherche toujours');
-    });
 }

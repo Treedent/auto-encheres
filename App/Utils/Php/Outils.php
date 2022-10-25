@@ -51,8 +51,9 @@ final class Outils {
     /* Fonction qui formatte un nombre en monnaie Euro */
     static public function formalizeEuro($montant): string
     {
-        $fmt = numfmt_create( 'fr_FR', NumberFormatter::CURRENCY );
-        return numfmt_format_currency($fmt, $montant, "EUR");
+        //$fmt = numfmt_create( 'fr_FR', NumberFormatter::CURRENCY );
+        //return numfmt_format_currency($fmt, $montant, "EUR");
+        return $montant . '.00 &euro;';
     }
 
     /* Fonction qui s'assure qu'un appel de page PHP est bien effectué depuis le nom de domaine référencé */

@@ -68,6 +68,12 @@ if(count($_GP)>0) {
         exit();
     }
 
+    if(isset($_GP['searchword'])) {
+        $annonces = new Annonces;
+        echo $annonces->search($_GP['searchword']);
+        exit();
+    }
+
     if(isset($_GP['enchereannonceid'])) {
         $annonceId = $_GP['enchereannonceid'];
         // Insertion d'une nouvelle enchère si on est connecté
@@ -93,8 +99,6 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 // On route vers un contrôleur.
 if(!empty($data)) {
-    if(isset($data->getAllAnnonces) && $data->getAllAnnonces === '1') {
         exit();
-    }
 }
 

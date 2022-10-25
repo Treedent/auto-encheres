@@ -37,11 +37,11 @@ switch ($uriSegments[1]) {
                 ?>
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <form action="/" method="post" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <div class="input-group">
                     <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Rechercher..."
-                           aria-label="Search">
-                    <button class="btn btn-outline-light" type="button" id="search-btn">Search</button>
+                           aria-label="Search" name="searchword">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </div>
             </form>
 

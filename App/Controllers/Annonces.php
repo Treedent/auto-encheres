@@ -39,6 +39,16 @@ class Annonces extends Controller
         return PdoDb::getInstance()->requete($sql);
     }
 
+    /*
+    * Exécute une recherche dans la base de données.
+    */
+    public function search($searchword)
+    {
+        $sql= 'SELECT * from annonces WHERE concat(titre_annonce,marque,modele,description) like "%'. $searchword .'%";';
+        $results = PdoDb::getInstance()->requete($sql);
+        return $this->render('layouts.default', 'templates.results', $results);
+    }
+
     // Affiche le détail d'une annonce et sa dernière enchere à partir de uid_annonce
     public function details($uid_annonce): array|string
     {
