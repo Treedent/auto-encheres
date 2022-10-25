@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#toplogo {
+  margin-right: 20px;
+}
+#footer {
+  width: 100%;
+  min-height: 50px;
+}
+.grid-item {
+  margin: 0 15px 20px 0;
+  min-height: 460px;
+}
+.btn-details {
+  position: absolute;
+  bottom: 18px;
+}
+.link {
+  cursor:pointer;
+}
+#escobar {
+  display: none;
+}
+.grid-item {
+  width: 15.25rem;
+}
